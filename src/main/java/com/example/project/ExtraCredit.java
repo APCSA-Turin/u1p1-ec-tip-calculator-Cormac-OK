@@ -22,6 +22,8 @@ public class ExtraCredit {
         cent and then divide by 100.0 in order to convert back to dollars and cents. It has to be 100.0 and not 100, because the rounded value
         is an int, so if I divide by an int, it's int division, which gives and int, whereas I need a double.
         I found out about the Math.round method at https://www.w3schools.com/java/ref_math_round.asp*/
+        
+        // this section is just using the above principle to round values.
         tip = Math.round(tip * 100)/100.0;
         totalCost = Math.round(totalCost * 100)/100.0;
         costEachBefore = Math.round(costEachBefore * 100)/100.0;
@@ -57,11 +59,11 @@ public class ExtraCredit {
 
         //Your scanner object and while loop should go here
 
-        while (!lastInput.equals("-1")){
+        while (!lastInput.equals("-1")){ // loops until the user enters "-1"
             System.out.println("Enter an item name, or \"-1\" to exit.");
             lastInput = scanner.nextLine();
             if (!lastInput.equals("-1")){
-                items = items + lastInput + "\n";
+                items = items + lastInput + "\n"; // adds the item entered to the end of the items string with a linebreak
             }
         }
 
