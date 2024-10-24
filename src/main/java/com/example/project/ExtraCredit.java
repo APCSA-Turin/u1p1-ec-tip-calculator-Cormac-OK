@@ -51,9 +51,9 @@ public class ExtraCredit {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int people = 0;
-        int percent = 0;
-        double cost = 0;
+        int people = 10;
+        int percent = 18;
+        double cost = 105.53;
         String items = ""; 
         String lastInput = "";
 
